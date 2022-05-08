@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Register</title>
+
+	<!-- <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script> -->
+	<link rel="stylesheet" href="vendor/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+	<form style="width:50%; margin:auto" action="processRegister.php" method="POST">
+		<h2>Form đăng ký tài khoản</h2>
+		<input type="text" placeholder="username" name="username" class="form-control">
+		<span class="username-error"></span>
+		<br>
+		<input type="password" placeholder="password" name="password" class="form-control"><br>
+		<input type="password" placeholder="retype password" name="retype-password" class="form-control"><br>
+		<input type="email" name="email" placeholder="email" class="form-control"><br>
+		<input type="text" placeholder="firstname" name="firstname" class="form-control"><br>
+		<input type="text" placeholder="lastname" name="lastname" class="form-control"><br>
+		<input type="date" placeholder="birthday" name="birthday" class="form-control"><br>
+		<input type="radio" name="gender" value="0" checked> Nam <br>
+		<input type="radio" name="gender" value="1"> Nữ <br>
+		<input type="radio" name="gender" value="2" > Không xác định <br>
+		<input type="submit" value="Register" class="btn btn-primary">
+	</form>
+</body>
+</html>
